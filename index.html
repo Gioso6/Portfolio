@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Ingénieur MESI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    h2 {
-      color: #004080;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 1rem;
-      background-color: #004080;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Gioso - Accueil</title>
+<style>
+  /* Reset simple */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+  nav {
+    background-color: #004d99;
+    padding: 1em;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.2em;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    flex: 1;  /* pour que le footer reste en bas */
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    font-size: 0.9em;
+  }
+  footer a {
+    color: #66b3ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
     footer {
+      flex-direction: column;
       text-align: center;
-      padding: 1rem;
-      background-color: #e0e0e0;
-      color: #555;
+      gap: 1em;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Giosuè S.</h1>
-    <p>Ingénieur en Mécatronique, Énergie et Systèmes Intelligents</p>
-  </header>
 
-  <section>
-    <h2>À propos de moi</h2>
-    <p>
-      Titulaire d’un Master 2 MESI, je suis passionné par l’automatisation, les systèmes embarqués et la maintenance intelligente.
-      J’ai travaillé sur divers projets intégrant l’IA, la mécatronique et les systèmes industriels connectés.
-    </p>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+</nav>
 
-    <h2>Qui suis-je ?</h2>
-    <img src="images/badminton.PNG" alt="Photo de Giosuè" style="max-width: 200px; border-radius: 100px;">
-    <p>Je suis un ingénieur passionné par la mécatronique et l’IA industrielle...</p>
+<main>
+  <h1>Bienvenue sur mon portfolio</h1>
+  <p>Je suis Gioso, ingénieur en mécatronique, énergie et systèmes intelligents. Découvrez mes projets, compétences et mon parcours.</p>
+</main>
 
+<footer>
+  <div>
+    <a href="cv.pdf" download>Télécharger mon CV</a>
+  </div>
+  <div>
+    Contact : <a href="mailto:giosuè@example.com">giosuè@example.com</a> | 
+    <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/Gioso6" target="_blank">GitHub</a>
+  </div>
+</footer>
 
-    <h2>Compétences</h2>
-    <ul>
-      <li>Programmation Python, C, Node-RED</li>
-      <li>Conception CAO (SolidWorks), simulation</li>
-      <li>Systèmes embarqués (Arduino, Raspberry Pi, STM32)</li>
-      <li>IA appliquée à la maintenance (VAE, CNN, LSTM)</li>
-      <li>Automatismes industriels, capteurs, actuateurs</li>
-    </ul>
-
-    <h2>Projets</h2>
-    <p>Voici quelques projets récents :</p>
-    <ul>
-      <li>Détection d’anomalies dans les vibrations de machines CNC</li>
-      <li>Simulation d’un bras robotisé avec rétroaction en temps réel</li>
-      <li>Monitoring d’énergie dans des systèmes industriels</li>
-    </ul>
-
-    <a href="mailto:giosu6@example.com" class="button">Me contacter</a>
-  </section>
-
-  <footer>
-    © 2025 Giosuè S. — Portfolio personnel
-  </footer>
 </body>
 </html>
