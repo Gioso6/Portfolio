@@ -8,21 +8,71 @@
   /* Reset simple */
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: Arial, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+  
   nav {
     background-color: #004d99;
     padding: 1em;
     text-align: center;
   }
-  nav a {
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 2em;
+    position: relative;
+  }
+  nav > ul > li {
+    position: relative;
+  }
+  nav > ul > li > a {
     color: white;
     text-decoration: none;
-    margin: 0 1.2em;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 0.3em 0.5em;
+    display: inline-block;
   }
-  nav a:hover {
+  nav > ul > li > a:hover {
     text-decoration: underline;
   }
+  
+  /* Sous-menu pour Home */
+  nav ul li ul {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* juste en dessous du menu principal */
+    left: 0;
+    background-color: #0066cc;
+    width: 160px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  nav ul li ul li {
+    border-bottom: 1px solid #005bb5;
+  }
+  nav ul li ul li:last-child {
+    border-bottom: none;
+  }
+  nav ul li ul li a {
+    color: white;
+    font-weight: normal;
+    padding: 0.8em 1em;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+  nav ul li ul li a:hover {
+    background-color: #004080;
+  }
+  
+  /* Au hover sur Home, on affiche le sous-menu */
+  nav ul li:hover > ul {
+    max-height: 500px; /* assez grand pour afficher tous les sous-éléments */
+    transition: max-height 0.4s ease-in;
+  }
+  
   main {
     flex: 1;  /* pour que le footer reste en bas */
     padding: 2em;
@@ -51,21 +101,65 @@
       text-align: center;
       gap: 1em;
     }
+    nav ul {
+      flex-direction: column;
+      gap: 0;
+    }
+    nav ul li ul {
+      position: static;
+      max-height: none !important;
+      box-shadow: none;
+      background-color: transparent;
+      width: auto;
+    }
+    nav ul li ul li a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
   }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
-  <a href="projects.html">Projects</a>
-  <a href="skills.html">Skills</a>
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
 </nav>
 
 <main>
   <h1>Bienvenue sur mon portfolio</h1>
   <p>Je suis Gioso, ingénieur en mécatronique, énergie et systèmes intelligents. Découvrez mes projets, compétences et mon parcours.</p>
+  
+  <!-- Exemple d'ancres pour les sections -->
+  <section id="section1" style="margin-top:3em;">
+    <h2>Section 1</h2>
+    <p>Contenu de la section 1.</p>
+  </section>
+  <section id="section2" style="margin-top:3em;">
+    <h2>Section 2</h2>
+    <p>Contenu de la section 2.</p>
+  </section>
+  <section id="section3" style="margin-top:3em;">
+    <h2>Section 3</h2>
+    <p>Contenu de la section 3.</p>
+  </section>
+  <section id="section4" style="margin-top:3em;">
+    <h2>Section 4</h2>
+    <p>Contenu de la section 4.</p>
+  </section>
+  
 </main>
 
 <footer>
