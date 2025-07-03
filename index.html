@@ -11,10 +11,15 @@
       --accent: #00aaff;
       --text: #ffffff;
       --overlay: rgba(0,0,0,0.8);
+      --hide-point: 40vh; /* hauteur à partir de laquelle l'image est cachée */
     }
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body {
+      /* Gradient 1: masque transparent->noir à partir de --hide-point */
+      /* Gradient 2: overlay pour assombrir image */
+      /* Gradient 3: background image */
       background:
+        linear-gradient(to bottom, transparent var(--hide-point), var(--primary) var(--hide-point)),
         linear-gradient(var(--overlay), var(--overlay)),
         url('images/background.jpg') center/cover no-repeat;
       color: var(--text);
@@ -33,7 +38,6 @@
     nav ul li { position: relative; }
     nav ul li a { color: var(--text); font-weight: 600; padding: 0.5rem; transition: background 0.3s; }
     nav ul li:hover > a { background: var(--secondary); border-radius: 4px; }
-
     /* Submenu */
     nav ul li ul.submenu { position: absolute; top: 130%; left: 0; background: var(--secondary); list-style: none; overflow: hidden; max-height: 0; transition: max-height 0.4s ease; border-radius: 4px; }
     nav ul li:hover > ul.submenu { max-height: 15em; }
