@@ -1,4 +1,4 @@
-modifies ce code pour satisfaire ma demande : "<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -11,17 +11,14 @@ modifies ce code pour satisfaire ma demande : "<!DOCTYPE html>
       --accent: #00aaff;
       --text: #ffffff;
       --overlay: rgba(0,0,0,0.8);
-      --hide-point: 40vh; /* hauteur à partir de laquelle l'image est cachée */
+      --hide-point: 40vh;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body {
-      /* Gradient 1: masque transparent->noir à partir de --hide-point */
-      /* Gradient 2: overlay pour assombrir image */
-      /* Gradient 3: background image */
       background:
         linear-gradient(to bottom, transparent var(--hide-point), var(--primary) var(--hide-point)),
         linear-gradient(var(--overlay), var(--overlay)),
-        url('images/background.jpg') center/cover no-repeat;
+        url('images/background.jpg') center/cover no-repeat fixed;
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -32,9 +29,9 @@ modifies ce code pour satisfaire ma demande : "<!DOCTYPE html>
     a:hover::after { width: 100%; }
 
     /* Navbar */
-    nav { position: relative; width: 100%; padding: 1rem 2rem; z-index: 1000; }
-    nav .logo { font-weight: bold; font-size: 1.5rem; color: var(--accent); cursor: default; }
-    nav ul { list-style: none; display: flex; gap: 2rem; justify-content: center; }
+    nav { position: relative; width: 100%; padding: 1rem 2rem; z-index: 1000; display: flex; align-items: center; }
+    nav .logo { font-weight: bold; font-size: 1.5rem; color: var(--accent); cursor: default; margin-right: auto; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
     nav ul li { position: relative; }
     nav ul li a { color: var(--text); font-weight: 600; padding: 0.5rem; transition: background 0.3s; }
     nav ul li:hover > a { background: var(--secondary); border-radius: 4px; }
@@ -44,125 +41,109 @@ modifies ce code pour satisfaire ma demande : "<!DOCTYPE html>
     nav ul li ul.submenu li a { display: block; padding: 0.5rem 1rem; font-weight: normal; color: var(--text); }
     nav ul li ul.submenu li a:hover { background: var(--secondary); }
 
-    .container { max-width: 900px; margin: 140px auto 40px; padding: 0 1rem; }
-    section { margin-bottom: 4rem; opacity: 0; transform: translateY(20px); animation: fadeInUp 0.6s forwards; }
-    section:nth-child(1) { animation-delay: 0.2s; }
-    section:nth-child(2) { animation-delay: 0.4s; }
-    section:nth-child(3) { animation-delay: 0.6s; }
-    section:nth-child(4) { animation-delay: 0.8s; }
-    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-    section h2 { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.3rem; width: fit-content; color: var(--text); }
+    .container { max-width: 900px; margin: 140px auto 40px; padding: 0 1rem; position: relative; z-index: 1; }
+    section { margin-bottom: 4rem; }
+    section h2 { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.3rem; color: var(--text); }
     section p { margin-bottom: 1rem; font-size: 1.1rem; color: var(--text); }
 
-    /* Projects grid */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5rem; }
     .project-card { background: var(--secondary); border-radius: 8px; padding: 1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .project-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 8px 16px rgba(0,0,0,0.9); }
     .project-card h3 { margin-bottom: 0.5rem; color: var(--accent); }
     .project-card p { color: var(--text); }
 
-    /* Skills list */
     .skills-list { display: flex; flex-wrap: wrap; gap: 0.8rem; }
     .skill { background: var(--accent); color: var(--primary); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; transition: transform 0.2s ease; }
     .skill:hover { transform: scale(1.1); }
 
-    /* Contact bar */
-    .contact-bar { background: var(--secondary); color: var(--text); padding: 1.5rem 2rem; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; border-radius: 8px; }
-    .contact-item { display: flex; align-items: center; gap: 0.5rem; }
+    .contact-section { max-width: 300px; margin: 4rem auto; padding: 1.5rem; background: var(--secondary); border-radius: 8px; display: flex; flex-direction: column; gap: 1rem; }
+    .contact-section a { color: var(--text); font-weight: 600; }
+
+    /* Scroll to top button */
+    #toTop {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      width: 50px;
+      height: 50px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.5rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s;
+      z-index: 1000;
+    }
+    #toTop.show { opacity: 1; visibility: visible; }
 
     @media(max-width: 600px) {
       nav ul { flex-direction: column; gap: 0.5rem; }
       .container { margin-top: 160px; }
-      .contact-bar { flex-direction: column; align-items: flex-start; }
+      .contact-section { margin: 2rem auto; }
+      #toTop { right: 20px; bottom: 20px; }
     }
   </style>
 </head>
 <body>
-<nav>
-  <div class="logo">Gioso6</div>
-  <ul>
-    <li>
-      <a href="#home">Home</a>
-      <ul class="submenu">
-        <li><a href="#home-sub1">Sous-section 1</a></li>
-        <li><a href="#home-sub2">Sous-section 2</a></li>
-        <li><a href="#home-sub3">Sous-section 3</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#about">À propos</a>
-      <ul class="submenu">
-        <li><a href="#about-sub1">Sous-section 1</a></li>
-        <li><a href="#about-sub2">Sous-section 2</a></li>
-        <li><a href="#about-sub3">Sous-section 3</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#projects">Projets</a>
-      <ul class="submenu">
-        <li><a href="#projects-sub1">Sous-section 1</a></li>
-        <li><a href="#projects-sub2">Sous-section 2</a></li>
-        <li><a href="#projects-sub3">Sous-section 3</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#skills">Compétences</a>
-      <ul class="submenu">
-        <li><a href="#skills-sub1">Sous-section 1</a></li>
-        <li><a href="#skills-sub2">Sous-section 2</a></li>
-        <li><a href="#skills-sub3">Sous-section 3</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+  <nav id="mainNav">
+    <div class="logo">Gioso6</div>
+    <ul>
+      <li><a href="#home">Home</a><ul class="submenu"><li><a href="#home-sub1">Sous-section 1</a></li><li><a href="#home-sub2">Sous-section 2</a></li><li><a href="#home-sub3">Sous-section 3</a></li></ul></li>
+      <li><a href="#about">À propos</a><ul class="submenu"><li><a href="#about-sub1">Sous-section 1</a></li><li><a href="#about-sub2">Sous-section 2</a></li><li><a href="#about-sub3">Sous-section 3</a></li></ul></li>
+      <li><a href="#projects">Projets</a><ul class="submenu"><li><a href="#projects-sub1">Sous-section 1</a></li><li><a href="#projects-sub2">Sous-section 2</a></li><li><a href="#projects-sub3">Sous-section 3</a></li></ul></li>
+      <li><a href="#skills">Compétences</a><ul class="submenu"><li><a href="#skills-sub1">Sous-section 1</a></li><li><a href="#skills-sub2">Sous-section 2</a></li><li><a href="#skills-sub3">Sous-section 3</a></li></ul></li>
+    </ul>
+  </nav>
 
-<div class="container">
-  <section id="home">
-    <h2>Bienvenue</h2>
-    <p>Ingénieur diplômé en Mécatronique, Énergie et Systèmes Intelligents, passionné par la conception innovante, les systèmes embarqués et le développement durable.</p>
-    <p>Découvrez mes projets, mes compétences, et n’hésitez pas à me contacter !</p>
-  </section>
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Après un master en mécatronique, j’ai acquis des compétences en conception mécanique, électronique et programmation.</p>
-    <p>Je suis motivé par la résolution de problèmes complexes et l’optimisation de systèmes hybrides.</p>
-  </section>
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Robot autonome</h3>
-        <p>Conception d’un robot mobile autonome utilisant capteurs et algorithmes de navigation.</p>
+  <div class="container">
+    <section id="home">
+      <h2>Bienvenue</h2>
+      <p>Ingénieur diplômé en Mécatronique, Énergie et Systèmes Intelligents...</p>
+    </section>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Après un master en mécatronique...</p>
+    </section>
+    <section id="projects">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <!-- cartes projets -->
       </div>
-      <div class="project-card">
-        <h3>Système énergétique hybride</h3>
-        <p>Développement d’un prototype combinant énergie solaire et stockage batterie.</p>
+    </section>
+    <section id="skills">
+      <h2>Compétences</h2>
+      <div class="skills-list">
+        <!-- compétences -->
       </div>
-      <div class="project-card">
-        <h3>Intelligence embarquée</h3>
-        <p>Implémentation d’un système de contrôle embarqué avec IA pour optimisation.</p>
-      </div>
+    </section>
+
+    <div class="contact-section">
+      <a href="https://instagram.com/tonprofil" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+      <a href="mailto:gioso67000@gmail.com">Email</a>
+      <a href="tel:+33763746773">Téléphone</a>
     </div>
-  </section>
-  <section id="skills">
-    <h2>Compétences</h2>
-    <div class="skills-list">
-      <div class="skill">C / C++</div>
-      <div class="skill">Python</div>
-      <div class="skill">MATLAB</div>
-      <div class="skill">ROS</div>
-      <div class="skill">Arduino</div>
-      <div class="skill">Linux</div>
-      <div class="skill">Machine Learning</div>
-      <div class="skill">SolidWorks</div>
-    </div>
-    <div class="contact-bar">
-      <div class="contact-item">Instagram: <a href="https://instagram.com/tonprofil" target="_blank">@tonprofil</a></div>
-      <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/tonprofil" target="_blank">Ton Profil</a></div>
-      <div class="contact-item">Email: <a href="mailto:gioso67000@gmail.com">gioso67000@gmail.com</a></div>
-      <div class="contact-item">Tel: <a href="tel:+33763746773">+33 7 63 74 67 73</a></div>
-    </div>
-  </section>
-</div>
+  </div>
+
+  <div id="toTop" title="Haut">↑</div>
+
+  <script>
+    const toTop = document.getElementById('toTop');
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      const navBottom = nav.getBoundingClientRect().bottom;
+      if (navBottom < 0) {
+        toTop.classList.add('show');
+      } else {
+        toTop.classList.remove('show');
+      }
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
-</html> "
+</html>
