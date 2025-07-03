@@ -6,65 +6,63 @@
   <title>Gioso6 - Portfolio Ingénieur Mécatronique</title>
   <style>
     :root {
-      --primary: #000000;     /* noir pur */
-      --secondary: #111111;   /* presque noir */
-      --accent: #00aaff;      /* bleu océan vif */
-      --text: #ffffff;        /* texte blanc pur */
-      --muted: #444444;       /* gris sombre pour paragraphes */
+      --primary: #000000;
+      --secondary: rgba(0,0,0,0.6);
+      --accent: #00aaff;
+      --text: #ffffff;
+      --muted: #444444;
       --hover: rgba(0,170,255,0.1);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: var(--primary); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+    body { background-color: var(--primary); color: var(--text); line-height: 1.6; scroll-behavior: smooth; background-image: url('images/background.jpg'); background-size: cover; background-position: center; }
     a { color: var(--accent); text-decoration: none; position: relative; }
     a::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: var(--accent); transition: width 0.3s ease; }
     a:hover::after { width: 100%; }
 
-    /* Navbar */
-    nav { position: fixed; top: 0; left: 0; right: 0; background: var(--secondary); padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.7); z-index: 1000; }
+    /* Navbar (static, transparent) */
+    nav { position: relative; width: 100%; padding: 1rem 2rem; z-index: 1000; }
     nav .logo { font-weight: bold; font-size: 1.5rem; color: var(--accent); cursor: default; }
-    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul { list-style: none; display: flex; gap: 2rem; justify-content: center; }
     nav ul li { position: relative; }
     nav ul li a { color: var(--text); font-weight: 600; padding: 0.5rem; transition: background 0.3s; }
     nav ul li:hover > a { background: var(--hover); border-radius: 4px; }
-
     /* Submenu */
-    nav ul li ul.submenu { position: absolute; top: 110%; left: 0; background: var(--secondary); list-style: none; overflow: hidden; max-height: 0; transition: max-height 0.4s ease; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.7); }
+    nav ul li ul.submenu { position: absolute; top: 130%; left: 0; background: var(--secondary); list-style: none; overflow: hidden; max-height: 0; transition: max-height 0.4s ease; border-radius: 4px; }
     nav ul li:hover > ul.submenu { max-height: 15em; }
     nav ul li ul.submenu li a { display: block; padding: 0.5rem 1rem; font-weight: normal; color: var(--text); }
     nav ul li ul.submenu li a:hover { background: var(--hover); }
 
-    .container { max-width: 900px; margin: 140px auto 80px; padding: 0 1rem; }
+    .container { max-width: 900px; margin: 140px auto 40px; padding: 0 1rem; }
     section { margin-bottom: 4rem; opacity: 0; transform: translateY(20px); animation: fadeInUp 0.6s forwards; }
     section:nth-child(1) { animation-delay: 0.2s; }
     section:nth-child(2) { animation-delay: 0.4s; }
     section:nth-child(3) { animation-delay: 0.6s; }
     section:nth-child(4) { animation-delay: 0.8s; }
-
     @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-
     section h2 { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.3rem; width: fit-content; color: var(--accent); }
     section p { margin-bottom: 1rem; font-size: 1.1rem; color: var(--muted); }
 
     /* Projects grid */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5rem; }
-    .project-card { background: var(--secondary); border-radius: 8px; padding: 1rem; box-shadow: 0 3px 8px rgba(0,0,0,0.7); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card { background: var(--secondary); border-radius: 8px; padding: 1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
     .project-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 8px 16px rgba(0,0,0,0.9); }
     .project-card h3 { margin-bottom: 0.5rem; color: var(--accent); }
     .project-card p { color: var(--muted); }
 
     /* Skills list */
     .skills-list { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-    .skill { background: var(--accent); color: var(--secondary); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; transition: transform 0.2s ease; }
+    .skill { background: var(--accent); color: var(--primary); padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; transition: transform 0.2s ease; }
     .skill:hover { transform: scale(1.1); }
 
-    /* Footer */
-    footer { background: var(--secondary); color: var(--muted); display: flex; justify-content: space-between; padding: 1rem 2rem; font-size: 0.9rem; position: fixed; bottom: 0; left: 0; right: 0; align-items: center; box-shadow: 0 -2px 10px rgba(0,0,0,0.7); }
-    footer a { color: var(--accent); }
+    /* Contact bar (en bas, plus grand) */
+    .contact-bar { background: var(--secondary); color: var(--text); padding: 1.5rem 2rem; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; border-radius: 8px; }
+    .contact-item { display: flex; align-items: center; gap: 0.5rem; }
+    .contact-item a { position: static; }
 
     @media(max-width: 600px) {
       nav ul { flex-direction: column; gap: 0.5rem; }
-      footer { flex-direction: column; align-items: flex-start; }
       .container { margin-top: 160px; }
+      .contact-bar { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -106,6 +104,7 @@
     </li>
   </ul>
 </nav>
+
 <div class="container">
   <section id="home">
     <h2>Bienvenue</h2>
@@ -142,16 +141,17 @@
       <div class="skill">MATLAB</div>
       <div class="skill">ROS</div>
       <div class="skill">Arduino</div>
-      <div class="skill">Linux</code></div>
-      <div class="skill">Machine Learning</code></div>
-      <div class="skill">SolidWorks</code></div>
+      <div class="skill">Linux</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">SolidWorks</div>
+    </div>
+    <div class="contact-bar">
+      <div class="contact-item">Instagram: <a href="https://instagram.com/tonprofil" target="_blank">@tonprofil</a></div>
+      <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/tonprofil" target="_blank">Ton Profil</a></div>
+      <div class="contact-item">Email: <a href="mailto:gioso67000@gmail.com">gioso67000@gmail.com</a></div>
+      <div class="contact-item">Tel: <a href="tel:+33763746773">+33 7 63 74 67 73</a></div>
     </div>
   </section>
 </div>
-<footer>
-  <div>CV : <a href="#">Télécharger le PDF</a></div>
-  <div>Contact : <a href="mailto:gioso67000@gmail.com">gioso67000@gmail.com</a> | <a href="tel:+33763746773">+33 7 63 74 67 73</a></div>
-</footer>
-
 </body>
 </html>
