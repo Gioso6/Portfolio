@@ -1,0 +1,72 @@
+/* Place this file in your project's root folder and link it in each HTML page */
+:root {
+  --primary: #000000;
+  --secondary: rgba(0,0,0,0.6);
+  --accent: #00aaff;
+  --text: #ffffff;
+  --overlay: rgba(0,0,0,0.8);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body {
+  background:
+    linear-gradient(to bottom, transparent 40vh, var(--primary) 40vh),
+    linear-gradient(var(--overlay), var(--overlay)),
+    url('images/background.jpg') center/cover no-repeat;
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  background: var(--overlay);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+.nav-hidden { transform: translateY(-100%); }
+nav .logo { font-weight: bold; font-size: 1.5rem; color: var(--accent); cursor: default; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav ul li { position: relative; }
+nav ul li a { color: var(--text); font-weight: 600; padding: 0.5rem; text-decoration: none; }
+nav ul li ul.submenu { position: absolute; top: 120%; left: 0; background: var(--secondary); list-style: none; overflow: hidden; max-height: 0; transition: max-height 0.4s ease; border-radius: 4px; }
+nav ul li:hover > ul.submenu { max-height: 10em; }
+nav ul li ul.submenu li a { display: block; padding: 0.5rem 1rem; font-weight: normal; color: var(--text); }
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+#scrollTop.show { opacity: 1; visibility: visible; }
+.page { min-height: 100vh; padding: 100px 2rem 50px; }
+.container { max-width: 900px; margin: auto; }
+.content-block { display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; }
+.content-block.right { flex-direction: row-reverse; }
+.content-block img { width: 45%; border-radius: 8px; }
+.content-block .text { width: 55%; font-size: 1.1rem; color: var(--text); }
+.contact-bar { background: var(--secondary); color: var(--text); padding: 1.5rem 2rem; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; border-radius: 8px; }
+.contact-item { display: flex; align-items: center; gap: 0.5rem; }
+.contact-item a { color: var(--accent); }
+@media(max-width: 768px) {
+  .content-block { flex-direction: column; text-align: center; }
+  .content-block.right { flex-direction: column; }
+  .content-block img, .content-block .text { width: 100%; }
+}
