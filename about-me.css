@@ -1006,4 +1006,24 @@
 
 
 
+.about-me-about-me .about-me-hero {
+  position: relative;            /* pour le stacking des enfants */
+  width: 100%;
+  height: 100vh;                  /* ou 100vh pour plein écran */
+  background-image: url("images/aboutme/me-paris24.jpg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Texte au-dessus */
+.about-me-about-me .about-me-hero-text-container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0,0,0,0.8);
+}
+
+
+
 
