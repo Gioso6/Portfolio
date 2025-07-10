@@ -1,0 +1,1009 @@
+.about-me-container10 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.about-me-navbar-container {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-white);
+}
+ 
+.about-me-navbar {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-layout-size-maxcontent);
+  align-items: center;
+  padding-top: var(--dl-layout-space-tripleunit);
+  padding-left: var(--dl-layout-space-tripleunit);
+  padding-right: var(--dl-layout-space-tripleunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-layout-space-tripleunit);
+  justify-content: space-between;
+}
+ 
+.about-me-links-container1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+ 
+.about-me-link10 {
+  fill: var(--dl-color-gray-black);
+  color: var(--dl-color-gray-black);
+  margin-right: var(--dl-layout-space-tripleunit);
+  text-decoration: none;
+}
+ 
+.about-me-link11 {
+  fill: var(--dl-color-gray-700);
+  color: var(--dl-color-gray-700);
+  margin-right: var(--dl-layout-space-tripleunit);
+  animation-name: pulse;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.about-me-link12 {
+  margin-right: var(--dl-layout-space-tripleunit);
+  text-decoration: none;
+}
+ 
+.about-me-link13 {
+  color: var(--dl-color-success-500);
+  font-size: 24px;
+  font-family: "Overpass";
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.about-me-burger-menu {
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-icon10 {
+  width: 36px;
+  height: 36px;
+}
+ 
+.about-me-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-layout-space-tripleunit);
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+}
+ 
+.about-me-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-doubleunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.about-me-close-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-icon12 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.about-me-links-container2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-link14 {
+  margin-bottom: var(--dl-layout-space-unit);
+}
+ 
+.about-me-link15 {
+  margin-bottom: var(--dl-layout-space-unit);
+}
+ 
+.about-me-link16 {
+  margin-bottom: var(--dl-layout-space-unit);
+}
+ 
+.about-me-section-separator1 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  margin-top: var(--dl-layout-space-tenunits);
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-900);
+}
+ 
+.about-me-section-separator2 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-900);
+}
+ 
+.about-me-about-me {
+  width: 100%;
+  height: 535px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  justify-content: center;
+  background-image: url('https://play.teleporthq.io/static/svg/default-img.svg'),linear-gradient(180deg, rgb(189, 195, 199) 0.00%,rgb(241, 241, 241) 90.00%);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+ 
+.about-me-hero {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-layout-size-maxcontent);
+  margin-top: var(--dl-layout-space-fiveunits);
+  align-items: center;
+  padding-top: var(--dl-layout-space-fiveunits);
+  padding-left: var(--dl-layout-space-tripleunit);
+  margin-bottom: var(--dl-layout-space-fiveunits);
+  padding-right: var(--dl-layout-space-tripleunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-layout-space-fiveunits);
+  justify-content: space-between;
+}
+ 
+.about-me-hero-text-container {
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.about-me-heading3 {
+  color: rgb(4, 4, 4);
+  width: 581px;
+  text-align: center;
+  margin-bottom: var(--dl-layout-space-tripleunit);
+}
+ 
+.about-me-me-as-a-person {
+  gap: var(--dl-layout-space-fiveunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+ 
+.about-me-max-width1 {
+  gap: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.about-me-section-title1 {
+  gap: 24px;
+  width: auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.about-me-text14 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Overpass";
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+ 
+.about-me-text15 {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Overpass";
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.about-me-content1 {
+  gap: 32px;
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+ 
+.about-me-container12 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.about-me-container13 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.about-me-container14 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.about-me-me-as-an-engineer {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.about-me-section-title2 {
+  gap: 24px;
+  width: 979px;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.about-me-text16 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Overpass";
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+ 
+.about-me-text17 {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Overpass";
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.about-me-max-width2 {
+  width: 1463px;
+  align-self: center;
+  margin-top: var(--dl-layout-space-doubleunit);
+}
+ 
+.about-me-column1 {
+  margin-right: var(--dl-layout-space-fourunits);
+}
+ 
+.about-me-title1 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-description1 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-column2 {
+  margin-right: var(--dl-layout-space-fourunits);
+}
+ 
+.about-me-title2 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-description2 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-column3 {
+  margin-right: 0px;
+}
+ 
+.about-me-title3 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-description3 {
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-academic-bg {
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  background-color: #f1f1f1;
+}
+ 
+.about-me-max-width3 {
+  gap: 32px;
+  width: 1209px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-container15 {
+  gap: 32px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-text39 {
+  align-self: center;
+  font-family: "Overpass";
+  text-transform: capitalize;
+}
+ 
+.about-me-text40 {
+  align-self: center;
+  text-align: center;
+  font-family: "Overpass";
+}
+ 
+.about-me-container16 {
+  gap: var(--dl-layout-space-unit);
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+ 
+.about-me-link18 {
+  width: 191px;
+  text-decoration: none;
+}
+ 
+.about-me-link19 {
+  width: 193px;
+  text-decoration: none;
+}
+ 
+.about-me-timeline-container {
+  flex: 1;
+  width: 1193px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-step1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.about-me-container17 {
+  flex: 1;
+  left: var(--dl-layout-space-halfunit);
+  width: auto;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.about-me-container18 {
+  width: 12px;
+  height: 12px;
+  margin: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-round);
+  background-color: #000000;
+}
+ 
+.about-me-progress01 {
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #000000;
+}
+ 
+.about-me-container19 {
+  gap: var(--dl-layout-space-unit);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 48px;
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+  justify-content: flex-start;
+}
+ 
+.about-me-container20 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-text49 {
+  font-family: "Overpass";
+}
+ 
+.about-me-text50 {
+  text-align: left;
+  font-family: "Overpass";
+}
+ 
+.about-me-text51 {
+  font-family: "Overpass";
+}
+ 
+.about-me-container21 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.about-me-step2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.about-me-container22 {
+  flex: 1;
+  left: var(--dl-layout-space-halfunit);
+  width: auto;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.about-me-container23 {
+  width: 12px;
+  height: 12px;
+  margin: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-round);
+  background-color: #000000;
+}
+ 
+.about-me-progress02 {
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #000000;
+}
+ 
+.about-me-container24 {
+  gap: var(--dl-layout-space-unit);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 48px;
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+  justify-content: flex-start;
+}
+ 
+.about-me-container25 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-text57 {
+  font-family: "Overpass";
+}
+ 
+.about-me-text58 {
+  text-align: left;
+  font-family: "Overpass";
+}
+ 
+.about-me-text59 {
+  font-family: "Overpass";
+}
+ 
+.about-me-step3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.about-me-container26 {
+  flex: 1;
+  left: var(--dl-layout-space-halfunit);
+  width: auto;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.about-me-container27 {
+  width: 12px;
+  height: 12px;
+  margin: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-round);
+  background-color: #000000;
+}
+ 
+.about-me-progress03 {
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #000000;
+}
+ 
+.about-me-container28 {
+  gap: var(--dl-layout-space-unit);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 48px;
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+  justify-content: flex-start;
+}
+ 
+.about-me-container29 {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.about-me-text65 {
+  font-family: "Overpass";
+}
+ 
+.about-me-text66 {
+  text-align: left;
+  font-family: "Overpass";
+}
+ 
+.about-me-text67 {
+  font-family: "Overpass";
+}
+ 
+.about-me-section-separator3 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-900);
+}
+ 
+.about-me-footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-white);
+}
+ 
+.about-me-footer {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-layout-size-maxcontent);
+  align-items: center;
+  padding-top: var(--dl-layout-space-tripleunit);
+  padding-left: var(--dl-layout-space-tripleunit);
+  padding-right: var(--dl-layout-space-tripleunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-layout-space-tripleunit);
+  justify-content: space-between;
+}
+ 
+.about-me-social-links {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+ 
+.about-me-icon14 {
+  width: 24px;
+  height: 24px;
+  margin-right: var(--dl-layout-space-doubleunit);
+}
+ 
+.about-me-icon16 {
+  width: 24px;
+  height: 24px;
+  margin-right: var(--dl-layout-space-doubleunit);
+}
+ 
+.about-me-icon18 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.about-me-copyright-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+ 
+.about-me-icon20 {
+  width: 24px;
+  height: 24px;
+  margin-right: var(--dl-layout-space-doubleunit);
+}
+
+
+/******************************************************************************************************
+
+------------------------------------------ MODIFICATION RAJOUTÉE --------------------------------------
+
+*******************************************************************************************************/
+
+.about-me-container12,
+.about-me-container13,
+.about-me-container14 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.about-me-container12 img,
+.about-me-container13 img,
+.about-me-container14 img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-me-container12:hover img,
+.about-me-container13:hover img,
+.about-me-container14:hover img {
+  opacity: 0.1 !important;
+}
+
+
+.about-me-container12::after,
+.about-me-container13::after,
+.about-me-container14::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  width: 80%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+
+
+.about-me-container12::after {
+  content: "I started swimming since the age of 11. \A At year 12, I decided to enter competitive swimming." 
+          " And 5 years later, I entered my first national competition. \A At 20 years old, I competed at the" 
+          " national University championship, in which I swam against Johann Ndoye-Brouard and Clément Secchy, both" 
+          " are now olympic swimmers. \A Although I didn't get to be an olympic athlete, my passion for this" 
+          " sport never died and never will.";
+  white-space: pre-wrap;
+  color: #000;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.about-me-container13::after {
+  content: "My love for sport doesn't just end at my determination for performance. It also translates to \A"
+          "a passion for competition and fascination for the power of teamwork. \A"
+          "My trip to Paris made me realize how powerful a whole nation can become just to support their athletes. \A"
+          "In a time with all the conflicts, a moment like the Paris 2024 Olympics, is just a joy to live through...";
+  white-space: pre-wrap; 
+  color: #000;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.about-me-container14::after {
+  content: "I’m pretty sure my spirit animal is a wandering 'snail'—always on the hunt for the next delicious adventure \A"
+          "Mornings aren’t real until I’ve negotiated a peace treaty between my 'pain au chocolat' and my 'croissant', and if 'baguettes and jam'"
+          " aren’t in my hand by lunchtime, my survival instincts kick in. \A"
+          "Dinner? It’s my Oscar ceremony: 'Choucroute' as the lead, 'Tarte flambée' as the supporting act, and dessert stealing the show every single time. \A"
+          "Because life’s too short not to taste the rainbow of every menu.";
+  white-space: pre-wrap; 
+  color: #000;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.about-me-container12:hover::after,
+.about-me-container13:hover::after,
+.about-me-container14:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+ 
+@media(max-width: 1200px) {
+  .about-me-about-me {
+    width: 100%;
+    height: 526px;
+  }
+  .about-me-max-width2 {
+    width: 1141px;
+  }
+  .about-me-max-width3 {
+    width: 1012px;
+  }
+  .about-me-timeline-container {
+    width: 1031px;
+  }
+}
+ 
+@media(max-width: 991px) {
+  .about-me-heading1 {
+    text-align: center;
+  }
+  .about-me-heading2 {
+    text-align: center;
+  }
+  .about-me-about-me {
+    height: 468px;
+  }
+  .about-me-hero {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-me-hero-text-container {
+    width: 80%;
+    align-self: center;
+    align-items: center;
+    margin-bottom: var(--dl-layout-space-fourunits);
+  }
+  .about-me-heading3 {
+    text-align: center;
+  }
+  .about-me-text10 {
+    text-align: center;
+  }
+  .about-me-content1 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-me-max-width2 {
+    width: 917px;
+  }
+  .about-me-content2 {
+    align-items: center;
+  }
+  .about-me-content3 {
+    align-items: center;
+  }
+  .about-me-content4 {
+    align-items: center;
+  }
+  .about-me-max-width3 {
+    gap: 32px;
+    width: 836px;
+  }
+  .about-me-timeline-container {
+    width: 827px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .about-me-navbar {
+    position: relative;
+  }
+  .about-me-links-container1 {
+    display: none;
+  }
+  .about-me-burger-menu {
+    display: flex;
+    padding: var(--dl-layout-space-halfunit);
+    margin-left: var(--dl-layout-space-tripleunit);
+    border-radius: var(--dl-layout-radius-radius4);
+    background-color: var(--dl-color-gray-black);
+  }
+  .about-me-icon10 {
+    fill: var(--dl-color-gray-white);
+  }
+  .about-me-about-me {
+    height: 480px;
+  }
+  .about-me-hero-text-container {
+    align-self: center;
+  }
+  .about-me-section-title2 {
+    width: 100%;
+  }
+  .about-me-max-width2 {
+    width: 500px;
+  }
+  .about-me-column1 {
+    margin-right: 0px;
+  }
+  .about-me-column2 {
+    margin-right: 0px;
+  }
+  .about-me-content3 {
+    margin-top: var(--dl-layout-space-fiveunits);
+    margin-bottom: var(--dl-layout-space-fiveunits);
+  }
+  .about-me-max-width3 {
+    width: 664px;
+    flex-direction: column;
+  }
+  .about-me-text40 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-me-timeline-container {
+    width: 100%;
+  }
+  .about-me-text50 {
+    text-align: left;
+  }
+  .about-me-text58 {
+    text-align: left;
+  }
+  .about-me-text66 {
+    text-align: left;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .about-me-burger-menu {
+    margin-left: var(--dl-layout-space-doubleunit);
+  }
+  .about-me-about-me {
+    height: 461px;
+  }
+  .about-me-hero-text-container {
+    width: 100%;
+    margin-top: var(--dl-layout-space-tripleunit);
+  }
+  .about-me-heading3 {
+    width: 478px;
+  }
+  .about-me-section-title2 {
+    width: 100%;
+  }
+  .about-me-max-width2 {
+    width: 382px;
+  }
+  .about-me-column1 {
+    margin-right: 0px;
+  }
+  .about-me-column2 {
+    margin-right: 0px;
+  }
+  .about-me-max-width3 {
+    width: 429px;
+  }
+  .about-me-container21 {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
