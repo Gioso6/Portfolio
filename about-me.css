@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
 }
- 
+
 .about-me-navbar-container {
   width: 100%;
   display: flex;
@@ -157,13 +157,13 @@
  
 .about-me-about-me {
   width: 100%;
-  height: 535px;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-size: contain;
+  background-size: cover;
   justify-content: center;
-  background-image: url('https://play.teleporthq.io/static/svg/default-img.svg'),linear-gradient(180deg, rgb(189, 195, 199) 0.00%,rgb(241, 241, 241) 90.00%);
+  background-image: url('images/aboutme/me-paris24.jpg');
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -225,7 +225,7 @@
   gap: 24px;
   width: auto;
   display: flex;
-  max-width: 800px;
+  max-width: 100%;
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;
@@ -260,7 +260,7 @@
   flex-shrink: 0;
   justify-content: center;
 }
- 
+
 .about-me-container12 {
   width: 100%;
   display: flex;
@@ -295,9 +295,9 @@
  
 .about-me-section-title2 {
   gap: 24px;
-  width: 979px;
+  width: 100%;
   display: flex;
-  max-width: 800px;
+  max-width: 2000px;
   align-items: center;
   flex-shrink: 0;
   flex-direction: column;
@@ -315,6 +315,8 @@
 }
  
 .about-me-text17 {
+  width: 100%;
+  max-width: 800px;
   font-size: 16px;
   text-align: center;
   font-family: "Overpass";
@@ -325,7 +327,8 @@
 }
  
 .about-me-max-width2 {
-  width: 1463px;
+  width: 100%;
+  max-width: 1463px;
   align-self: center;
   margin-top: var(--dl-layout-space-doubleunit);
 }
@@ -379,7 +382,8 @@
  
 .about-me-max-width3 {
   gap: 32px;
-  width: 1209px;
+  width: 100%;
+  max-width: 1209px;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -402,6 +406,7 @@
 }
  
 .about-me-text40 {
+  width: 100%;
   align-self: center;
   text-align: center;
   font-family: "Overpass";
@@ -429,7 +434,7 @@
  
 .about-me-timeline-container {
   flex: 1;
-  width: 1193px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -478,7 +483,7 @@
  
 .about-me-container19 {
   gap: var(--dl-layout-space-unit);
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   padding-left: 48px;
@@ -488,23 +493,27 @@
 }
  
 .about-me-container20 {
-  flex: 0 0 auto;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
  
 .about-me-text49 {
+  width: 100%;
+  text-align: left;
   font-family: "Overpass";
 }
  
-.about-me-text50 {
+.about-me-text50 { 
+  width: 100%;
   text-align: left;
   font-family: "Overpass";
 }
  
 .about-me-text51 {
+  width: 100%;
+  text-align: left;
   font-family: "Overpass";
 }
  
@@ -566,8 +575,7 @@
 }
  
 .about-me-container25 {
-  flex: 0 0 auto;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -578,6 +586,8 @@
 }
  
 .about-me-text58 {
+  width: 100%;
+  padding-right: 48px;
   text-align: left;
   font-family: "Overpass";
 }
@@ -840,16 +850,16 @@
 @media(max-width: 1200px) {
   .about-me-about-me {
     width: 100%;
-    height: 526px;
+    height: 100%;
   }
   .about-me-max-width2 {
-    width: 1141px;
+    width: 100%;
   }
   .about-me-max-width3 {
     width: 1012px;
   }
   .about-me-timeline-container {
-    width: 1031px;
+    width: 100%;
   }
 }
  
@@ -861,7 +871,7 @@
     text-align: center;
   }
   .about-me-about-me {
-    height: 468px;
+    height: 100%;
   }
   .about-me-hero {
     align-items: center;
@@ -885,9 +895,10 @@
     flex-direction: column;
   }
   .about-me-max-width2 {
-    width: 917px;
+    width: 100%;
   }
   .about-me-content2 {
+    width: 100%;
     align-items: center;
   }
   .about-me-content3 {
@@ -901,7 +912,7 @@
     width: 836px;
   }
   .about-me-timeline-container {
-    width: 827px;
+    width: 100%;
   }
 }
  
@@ -923,16 +934,19 @@
     fill: var(--dl-color-gray-white);
   }
   .about-me-about-me {
-    height: 480px;
+    height: 100%;
   }
   .about-me-hero-text-container {
     align-self: center;
   }
   .about-me-section-title2 {
     width: 100%;
+    max-width: 2000px;
+    padding: 48px;
   }
   .about-me-max-width2 {
-    width: 500px;
+    width : 100%;
+    max-width: 1000px;
   }
   .about-me-column1 {
     margin-right: 0px;
@@ -971,7 +985,7 @@
     margin-left: var(--dl-layout-space-doubleunit);
   }
   .about-me-about-me {
-    height: 461px;
+    height: 100%;
   }
   .about-me-hero-text-container {
     width: 100%;
@@ -984,7 +998,7 @@
     width: 100%;
   }
   .about-me-max-width2 {
-    width: 382px;
+    width: 100%;
   }
   .about-me-column1 {
     margin-right: 0px;
@@ -1006,23 +1020,7 @@
 
 
 
-.about-me-about-me .about-me-hero {
-  position: relative;            /* pour le stacking des enfants */
-  width: 100%;
-  height: 100vh;                  /* ou 100vh pour plein écran */
-  background-image: url("images/aboutme/me-paris24.jpg") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
 
-/* Texte au-dessus */
-.about-me-about-me .about-me-hero-text-container {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  text-shadow: 0 0 6px rgba(0,0,0,0.8);
-}
 
 
 

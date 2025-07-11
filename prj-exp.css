@@ -1,12 +1,13 @@
 .prj-exp-container1 {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
-  min-height: 100vh;
   align-items: center;
   flex-direction: column;
 }
- 
+
+
+
 .prj-exp-navbar-container {
   width: 100%;
   display: flex;
@@ -157,13 +158,13 @@
  
 .prj-exp-introduction {
   width: 100%;
-  height: 586px;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-size: contain;
+  background-size: cover;
   justify-content: center;
-  background-image: url('https://play.teleporthq.io/static/svg/default-img.svg'),linear-gradient(180deg, rgb(189, 195, 199) 0.00%,rgb(241, 241, 241) 90.00%);
+  background-image: url('images/prjct&exp/prjct&exp-guard.png'),linear-gradient(180deg, rgb(189, 195, 199) 0.00%,rgb(241, 241, 241) 90.00%);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -172,11 +173,9 @@
   width: 100%;
   display: flex;
   max-width: var(--dl-layout-size-maxcontent);
-  margin-top: var(--dl-layout-space-fiveunits);
   align-items: center;
   padding-top: var(--dl-layout-space-fiveunits);
   padding-left: var(--dl-layout-space-tripleunit);
-  margin-bottom: var(--dl-layout-space-fiveunits);
   padding-right: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   padding-bottom: var(--dl-layout-space-fiveunits);
@@ -194,7 +193,7 @@
  
 .prj-exp-heading3 {
   color: rgb(4, 4, 4);
-  width: 581px;
+  width: 100%;
   text-align: center;
   margin-bottom: var(--dl-layout-space-tripleunit);
 }
@@ -205,7 +204,7 @@
  
 .prj-exp-text104 {
   color: var(--dl-color-gray-black);
-  width: 729px;
+  width: 100%;
   height: 89px;
   display: flex;
   text-align: center;
@@ -243,10 +242,11 @@
  
 .prj-exp-project1 {
   width: 100%;
-  height: 900px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: #f1f1f1;
@@ -260,7 +260,8 @@
 }
  
 .prj-exp-container3 {
-  width: 1049px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-self: stretch;
   align-items: flex-start;
@@ -280,6 +281,8 @@
 }
  
 .prj-exp-text106 {
+  height: 100%;
+  
   margin-bottom: var(--dl-layout-space-fourunits);
 }
  
@@ -321,10 +324,11 @@
  
 .prj-exp-project2 {
   width: 100%;
-  height: 1075px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--dl-color-theme-secondary1);
@@ -351,7 +355,7 @@
 }
  
 .prj-exp-text135 {
-  margin-bottom: var(--dl-layout-space-fourunits);
+  margin-bottom: var(--dl-layout-space-units);
 }
  
 .prj-exp-text140 {
@@ -476,10 +480,11 @@
  
 .prj-exp-project3 {
   width: 100%;
-  height: 850px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: #f1f1f1;
@@ -561,10 +566,11 @@
  
 .prj-exp-project4 {
   width: 100%;
-  height: 698px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--dl-color-theme-secondary1);
@@ -629,10 +635,11 @@
  
 .prj-exp-project5 {
   width: 100%;
-  height: 720px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: #f1f1f1;
@@ -695,10 +702,11 @@
  
 .prj-exp-project6 {
   width: 100%;
-  height: 652px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-top: var(--dl-layout-space-tripleunit);
+  padding-bottom: var(--dl-layout-space-tripleunit);
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--dl-color-gray-white);
@@ -827,19 +835,20 @@
  
 @media(max-width: 1200px) {
   .prj-exp-project1 {
-    height: 747px;
+    height: 100%;
   }
   .prj-exp-image1 {
     width: 449px;
     height: 449px;
   }
   .prj-exp-container3 {
-    width: 774px;
+    width: 100%;
+    height: 100%;
     padding-left: var(--dl-layout-space-fiveunits);
     padding-right: var(--dl-layout-space-fiveunits);
   }
   .prj-exp-text106 {
-    width: 630px;
+    width: 100%;
   }
   .prj-exp-text109 {
     font-size: 20px;
@@ -848,7 +857,7 @@
     font-size: 20px;
   }
   .prj-exp-project2 {
-    height: 1226px;
+    height: 100%;
   }
   .prj-exp-container4 {
     width: 774px;
@@ -860,7 +869,7 @@
     height: 449px;
   }
   .prj-exp-project3 {
-    height: 1048px;
+    height: 100%;
   }
   .prj-exp-image3 {
     width: 449px;
@@ -872,7 +881,7 @@
     padding-right: var(--dl-layout-space-fiveunits);
   }
   .prj-exp-project4 {
-    height: 734px;
+    height: 100%;
   }
   .prj-exp-container6 {
     width: 774px;
@@ -884,7 +893,7 @@
     height: 449px;
   }
   .prj-exp-project5 {
-    height: 770px;
+    height: 100%;
   }
   .prj-exp-image5 {
     width: 449px;
@@ -896,7 +905,7 @@
     padding-right: var(--dl-layout-space-fiveunits);
   }
   .prj-exp-project6 {
-    height: 714px;
+    height: 100%;
   }
   .prj-exp-container8 {
     width: 774px;
@@ -935,24 +944,25 @@
   }
   .prj-exp-project1 {
     width: 100%;
-    height: 827px;
+    height: 100%;
   }
   .prj-exp-image1 {
     width: 325px;
     height: 325px;
   }
   .prj-exp-container3 {
-    width: 659px;
+    width: 100%;
+    height: 100%;
     margin-right: 0px;
   }
   .prj-exp-heading-container1 {
     width: 567px;
   }
   .prj-exp-text106 {
-    width: 564px;
+    width: 100%;
   }
   .prj-exp-project2 {
-    height: 1319px;
+    height: 100%;
   }
   .prj-exp-container4 {
     width: 704px;
@@ -964,7 +974,7 @@
     height: 325px;
   }
   .prj-exp-project3 {
-    height: 1156px;
+    height: 100%;
   }
   .prj-exp-image3 {
     width: 325px;
@@ -975,7 +985,7 @@
     margin-right: 0px;
   }
   .prj-exp-project4 {
-    height: 800px;
+    height: 100%;
   }
   .prj-exp-container6 {
     width: 704px;
@@ -986,7 +996,7 @@
     height: 325px;
   }
   .prj-exp-project5 {
-    height: 868px;
+    height: 100%;
   }
   .prj-exp-image5 {
     width: 325px;
@@ -997,7 +1007,7 @@
     margin-right: 0px;
   }
   .prj-exp-project6 {
-    height: 836px;
+    height: 100%;
   }
   .prj-exp-container8 {
     width: 704px;
@@ -1009,7 +1019,7 @@
   }
 }
  
-@media(max-width: 767px) {
+@media(max-width: 900px) {
   .prj-exp-navbar {
     position: relative;
   }
@@ -1027,23 +1037,23 @@
     fill: var(--dl-color-gray-white);
   }
   .prj-exp-introduction {
-    height: 626px;
+    height: 100%;
   }
   .prj-exp-cta-btn {
     padding-left: var(--dl-layout-space-fourunits);
     padding-right: var(--dl-layout-space-fourunits);
   }
   .prj-exp-project1 {
-    height: 1120px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
   .prj-exp-image1 {
-    width: 311px;
+    height: 100%;
   }
   .prj-exp-container3 {
     width: 100%;
-    height: 316px;
+    height: 100%;
     align-items: center;
     justify-content: flex-start;
   }
@@ -1063,7 +1073,7 @@
     text-align: center;
   }
   .prj-exp-project2 {
-    height: 1332px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
@@ -1083,19 +1093,19 @@
     text-align: center;
   }
   .prj-exp-image2 {
-    width: 311px;
+    height: 100%;
     align-self: center;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
   }
   .prj-exp-project3 {
-    height: 1293px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
   .prj-exp-image3 {
-    width: 311px;
+    height: 100%;
   }
   .prj-exp-container5 {
     width: 100%;
@@ -1110,7 +1120,7 @@
     text-align: center;
   }
   .prj-exp-project4 {
-    height: 1010px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
@@ -1133,15 +1143,15 @@
     align-self: center;
   }
   .prj-exp-image4 {
-    width: 311px;
+    height: 100%;
   }
   .prj-exp-project5 {
-    height: 1022px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
   .prj-exp-image5 {
-    width: 311px;
+    height: 100%;
   }
   .prj-exp-container7 {
     width: 100%;
@@ -1159,7 +1169,7 @@
     text-align: center;
   }
   .prj-exp-project6 {
-    height: 1038px;
+    height: 100%;
     padding-top: var(--dl-layout-space-fourunits);
     flex-direction: column;
   }
@@ -1179,7 +1189,11 @@
     text-align: center;
   }
   .prj-exp-image6 {
-    width: 311px;
+    height: 100%;
+  }
+  .view-more-wrapper {
+    display: inline-flex;
+    margin: 0 auto;
   }
 }
  
@@ -1191,7 +1205,7 @@
     width: 100%;
   }
   .prj-exp-heading3 {
-    width: 457px;
+    width: 100%;
   }
   .prj-exp-text100 {
     font-size: 35px;
@@ -1203,24 +1217,24 @@
     font-size: 28px;
   }
   .prj-exp-text104 {
-    width: 427px;
+    width: 100%;
   }
   .prj-exp-project1 {
-    height: 1161px;
+    height: 100%;
   }
   .prj-exp-image1 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
   }
   .prj-exp-container3 {
+    height: 100%;
     padding-left: var(--dl-layout-space-tripleunit);
     padding-right: var(--dl-layout-space-tripleunit);
   }
   .prj-exp-text106 {
-    width: 442px;
+    width: 100%;
   }
   .prj-exp-project2 {
-    height: 1621px;
+    height: 100%;
     position: relative;
   }
   .prj-exp-container4 {
@@ -1228,13 +1242,11 @@
     padding-right: var(--dl-layout-space-tripleunit);
   }
   .prj-exp-image2 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
     align-self: center;
   }
   .prj-exp-image3 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
   }
   .prj-exp-container5 {
     padding-left: var(--dl-layout-space-tripleunit);
@@ -1245,12 +1257,10 @@
     padding-right: var(--dl-layout-space-tripleunit);
   }
   .prj-exp-image4 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
   }
   .prj-exp-image5 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
   }
   .prj-exp-container7 {
     padding-left: var(--dl-layout-space-tripleunit);
@@ -1264,8 +1274,11 @@
     align-self: center;
   }
   .prj-exp-image6 {
-    width: 285px;
-    height: 266px;
+    height: 100%;
+  }
+  .view-more-wrapper {
+    display: inline-flex;
+    margin: 0 auto;
   }
 }
 
@@ -1284,6 +1297,13 @@
 .prj-exp-project5,
 .prj-exp-project6 {
   position: relative;
+}
+
+/* à placer dans prj-exp.css, après ta définition de .view-more-wrapper */
+.view-more-wrapper {
+  display: flex;
+  align-items: center;   /* aligne verticalement View More et Gallery */
+  gap: 1rem;
 }
 
 
@@ -1340,19 +1360,22 @@
 
 /* 1) Bouton gallery */
 .gallery-btn {
-  margin: 1rem auto;
   display: block;
+  margin: 1rem auto 0;
   padding: 0.5rem 1rem;
-  background:#444; color:#fff;
-  border:none; border-radius:4px;
-  cursor:pointer;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* 2) Modal masqué par défaut */
 .gallery-modal {
   display: none;
-  position: fixed; top:0; left:0;
-  width:100%; height:100%;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   z-index: 200;
 }
 
@@ -1426,23 +1449,3 @@
   margin: 0 auto;
 }
 
-
-
-
-.prj-exp-introduction .prj-exp-hero {
-  position: relative;            /* pour le stacking des enfants */
-  width: 100%;
-  height: 100vh;                  /* ou 100vh pour plein écran */
-  background-image: url("images/prjct&exp/prjct&exp-guard.png") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-
-/* Texte au-dessus */
-.prj-exp-introduction .prj-exp-heading3 {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  text-shadow: 0 0 6px rgba(0,0,0,0.8);
-}

@@ -40,7 +40,19 @@
   --dl-layout-radius-inputradius: 24px;
   --dl-layout-radius-buttonradius: 24px;
 }
- 
+
+/* keep all your content off the browser edges
+body {
+  margin: 0;
+  padding: 0 var(--dl-layout-space-fiveunits);
+}*/
+
+/* gentle responsive scaling of all rem-based text */
+html {
+  font-size: clamp(16px, 1.2vw, 20px);
+}
+
+
 .teleport-show {
   display: flex !important;
   transform: none !important;
@@ -187,21 +199,21 @@
  
 .thq-heading-1 {
   font-size: 48px;
-  font-family: STIX Two Text;
+  font-family: Overpass;
   font-weight: 700;
   line-height: 1.5;
 }
  
 .thq-heading-2 {
   font-size: 35px;
-  font-family: STIX Two Text;
+  font-family: Overpass;
   font-weight: 600;
   line-height: 1.5;
 }
  
 .thq-heading-3 {
   font-size: 26px;
-  font-family: STIX Two Text;
+  font-family: Overpass;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -213,6 +225,7 @@
 }
  
 .thq-body-small {
+  width: 100%;
   font-size: 16px;
   font-family: Noto Sans;
   line-height: 1.5;
@@ -297,6 +310,7 @@
 }
  
 .thq-card {
+  width: 100%;
   display: flex;
   align-items: stretch;
   border-radius: var(--dl-layout-radius-cardradius);
@@ -382,6 +396,7 @@
 }
  
 .thq-grid-auto-300 {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -549,13 +564,13 @@
   font-family: "Overpass";
   font-weight: 400;
   line-height: 1.55;
-  letter-spacing: 0.1px;
+  letter-spacing: 1px;
   text-transform: none;
   text-decoration: none;
 }
  
 .prjType {
-  font-size: 25px;
+  font-size: 18px;
   font-style: normal;
   font-family: Overpass;
   font-weight: 600;
@@ -566,10 +581,10 @@
  
 .Section-Text {
   font-size: 18px;
-  font-family: "Open Sans";
+  font-family: "Overpass";
   font-weight: 600;
   line-height: 1.55;
-  letter-spacing: 2;
+  letter-spacing: 1;
   text-transform: none;
   text-decoration: none;
 }
