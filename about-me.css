@@ -916,7 +916,7 @@
   }
 }
  
-@media(max-width: 767px) {
+@media(max-width: 840px) {
   .about-me-navbar {
     position: relative;
   }
@@ -978,6 +978,16 @@
   .about-me-text66 {
     text-align: left;
   }
+  .about-me-heading3{
+    width: 100%;
+  }
+
+  .about-me-timeline-container,
+  .about-me-step1,
+  .about-me-step2,
+  .about-me-step3{
+    width: 100%;
+  }
 }
  
 @media(max-width: 479px) {
@@ -1013,6 +1023,15 @@
     width: 100%;
     align-items: stretch;
     flex-direction: column;
+  }
+  .about-me-heading3{
+    width: 100%;
+  }
+  .about-me-timeline-container,
+  .about-me-step1,
+  .about-me-step2,
+  .about-me-step3{
+    width: 100%;
   }
 }
 
