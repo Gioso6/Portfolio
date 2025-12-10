@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
 const fadeIn = keyframes`
@@ -88,9 +89,9 @@ const Hero = () => {
         If you are interested, might aswell take a look at my past professional experience, conducted and on-going projects !
       </Text>
       <ActionsRow>
-        <CTAButton href="/projects">See my work</CTAButton>
-        <CTAButton href="/about">Know me more</CTAButton>
-        <CTAButton href="/resume">View my resume</CTAButton>
+        <CTAButton as={Link} to="/projects">See my work</CTAButton>
+        <CTAButton as={Link} to="/about">Know me more</CTAButton>
+        <CTAButton as={Link} to="/resume">View my resume</CTAButton>
       </ActionsRow>
     </HeroContainer>
   );
