@@ -69,7 +69,7 @@ const SectionTitle = styled.h2`
 
 const images = [
   {
-    imageUrl: '/images/aboutme/me-swim.jpg',
+    imageUrl: 'images/aboutme/me-swim.jpg',
     shortText: 'Me, airborn during a dive during a national swimming competition.',
     longText: `I started swimming since the age of 11. At year 12, I decided to enter competitive swimming. 
               And 5 years later, I entered my first national competition. At 20 years old, I competed at the
@@ -78,7 +78,7 @@ const images = [
               sport never died and never will.`,
   },
   {
-    imageUrl: '/images/aboutme/me-food.jpg',
+    imageUrl: 'images/aboutme/me-food.jpg',
     shortText: 'Tasting my way through new places, fuelled by curiosity.  -Ramen at Kodawari Ramen',
     longText: `I’m pretty sure my spirit animal is a wandering 'snail'—always on the hunt for the next delicious adventure
               Mornings aren’t real until I’ve negotiated a peace treaty between my 'pain au chocolat' and my 'croissant', and if 'baguettes and jam'
@@ -87,7 +87,7 @@ const images = [
               Because life’s too short not to taste the rainbow of every menu.`,
   },
   {
-    imageUrl: '/images/aboutme/me-arena-defense.jpg',
+    imageUrl: 'images/aboutme/me-arena-defense.jpg',
     shortText: 'Sitting in the stands at Paris Arena la Défense during the Paris Olympics 2024.',
     longText: `My love for sport doesn't just end at my determination for performance. It also translates to
               a passion for competition and fascination for the power of teamwork.
@@ -100,7 +100,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer>
       <Title>About Me</Title>
-      <ProfileImage src="/images/aboutme/photo_me.png" alt="My Photo" />
+      <ProfileImage src="images/aboutme/photo_me.png" alt="My Photo" />
       <GalleryIntro>
         I was born on May 16, 2002 into a loving Korean family, which gave me the unique opportunity to experience both Korean and French cultures. 
         Growing up between these two worlds, I learned to blend the strong work ethic of Korea with the creativity and values of France. Over the years, 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
@@ -24,7 +24,7 @@ const MainContent = styled.main`
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Router basename="/Portfolio">
+      <Router>
         <GlobalStyle />
         <AppContainer>
           <Header />

@@ -240,7 +240,7 @@ const allProjects = [
     title: 'Implementation of an AI-Based Quality Control System for a Paper-bag Production Line on Edge',
     subtitle: 'AI-Based Quality Control System on Edge',
     description: 'Optimize machine parameters to reduce paper tear, thus leading to less waste and downtime.',
-    imageUrl: '/images/prjct/prjct_holweg-final-year-project/default.jpg',
+    imageUrl: 'images/prjct/prjct_holweg-final-year-project/default.jpg',
     tags: ['Automation', 'IIoT', 'AI/ML', 'Edge Computing'],
     year: 2025,
     duration: '7 months',
@@ -272,7 +272,7 @@ const allProjects = [
           assistance systems, moving from reactive troubleshooting to proactive process optimization.
         </p>
 
-        <img src="/images/prjct/prjct_holweg-final-year-project/flexible_web.png" alt="Industrial Context" className="my-6 w-full rounded-lg" />
+        <img src="images/prjct/prjct_holweg-final-year-project/flexible_web.png" alt="Industrial Context" className="my-6 w-full rounded-lg" />
 
         <h3>OBJECTIVES</h3>
         <p>
@@ -316,7 +316,7 @@ const allProjects = [
           without one axis dominating the latent space representation.
         </p>
 
-        <img src="/images/prjct/prjct_holweg-final-year-project/model_architecture.png" alt="AI Architecture Diagram" className="my-6 w-full rounded-lg" />
+        <img src="images/prjct/prjct_holweg-final-year-project/model_architecture.png" alt="AI Architecture Diagram" className="my-6 w-full rounded-lg" />
 
         <p>
           The core AI development involved two distinct architectural families. For anomaly detection, <strong>Convolutional Variational 
@@ -346,8 +346,8 @@ const allProjects = [
           in the mechanical transmission without external sensors, offering a cost-effective solution for basic monitoring.
         </p>
 
-        <img src="/images/prjct/prjct_holweg-final-year-project/tsne_cluster.png" alt="t-SNE Clusters" className="my-6 w-full rounded-lg" />
-        <img src="/images/prjct/prjct_holweg-final-year-project/results.png" alt="Confusion Matrix" className="my-6 w-full rounded-lg" />
+        <img src="images/prjct/prjct_holweg-final-year-project/tsne_cluster.png" alt="t-SNE Clusters" className="my-6 w-full rounded-lg" />
+        <img src="images/prjct/prjct_holweg-final-year-project/results.png" alt="Confusion Matrix" className="my-6 w-full rounded-lg" />
 
         <p>
           On the deployment side, the project successfully delivered a functional prototype on the Belden OpEdge 8D gateway. The software 

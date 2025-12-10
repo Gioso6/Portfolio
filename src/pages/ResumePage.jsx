@@ -61,14 +61,14 @@ const ResumePage = () => {
     <ResumeContainer>
       <Header>
         <Title>Resume</Title>
-        <DownloadButton href="/Gio-SO_Resume.pdf" download>
+        <DownloadButton href="Gio-SO_Resume.pdf" download>
           Download PDF
         </DownloadButton>
       </Header>
       <Frame>
-        <Iframe src="/Gio-SO_Resume.pdf" title="Gio-SO_Resume" aria-label="Resume PDF" type="application/pdf">
+        <Iframe src="Gio-SO_Resume.pdf" title="Gio-SO_Resume" aria-label="Resume PDF" type="application/pdf">
           <p style={{ padding: '1rem', color: '#e2e8f0' }}>
-            Your browser cannot display the PDF. <a href="/Gio-SO_Resume.pdf">Download it here.</a>
+            Your browser cannot display the PDF. <a href="Gio-SO_Resume.pdf">Download it here.</a>
           </p>
         </Iframe>
       </Frame>
