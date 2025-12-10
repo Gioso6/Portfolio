@@ -24,7 +24,7 @@ const MainContent = styled.main`
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Router>
+      <Router basename="/Portfolio">
         <GlobalStyle />
         <AppContainer>
           <Header />
